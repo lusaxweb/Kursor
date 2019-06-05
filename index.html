@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./dist/kursor.css">
+
+  <style>
+    body {
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      padding: 15px;
+      border: 0px;
+      border: 2px solid rgb(0, 100, 200);
+      color: rgb(0, 100, 200);
+      transition: all .25s ease;
+      background: transparent
+    }
+
+    button:hover {
+      background: rgb(0, 100, 200);
+      color: rgb(255,255,255);
+    }
+
+    .hoverx {
+      background: rgb(200, 100, 200) !important
+    }
+    .caja {
+      width: 400px;
+      height: 400px;
+      border: 1px solid rgb(200, 100, 200);
+      overflow: hidden;
+      position: relative;
+
+    }
+    .caja2 {
+      width: 400px;
+      height: 400px;
+      border: 1px solid rgb(0, 100, 200);
+      overflow: hidden;
+      position: relative;
+
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="clickx()" class="button k-hover">Hello World</button>
+  <button onclick="clickx2()" class="button k-hover">Hello World 2</button>
+
+  <div onmouseenter="mouseenter()" onmouseleave="mouseleave()" class="caja">
+  </div>
+  <!-- <div class="caja2">
+
+  </div> -->
+</body>
+
+<script src="./dist/kursor.js"></script>
+
+<script>
+  var kursorx = new kursor({
+    type: 1,
+    color: 'rgba(200,100,0)',
+  })
+
+
+  function mouseenter () {
+    kursorx.hidden()
+  }
+  function mouseleave () {
+    kursorx.hidden(false)
+  }
+  // function clickx() {
+  //   // kursorx.color('rgba(100,0,100)')
+  //   kursorx.hidden()
+  // }
+  // function clickx2() {
+  //   // kursorx.color('rgba(100,0,100)')
+  //   kursorx.hidden(false)
+  // }
+
+  var kursor2 = new kursor({
+    el: '.caja',
+    color: 'rgba(0,0,255)',
+    type: 4,
+  })
+
+  // var kursor2 = new kursor({
+  //   type: 2,
+  //   removeDefaultCursor: false,
+  // })
+</script>
+</html>
