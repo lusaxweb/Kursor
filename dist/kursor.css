@@ -1,5 +1,5 @@
 /*!
-  * Kursor v0.1.4
+  * Kursor v0.1.5
   * Forged by Luis Daniel Rovira
   * Released under the MIT License.
   */
