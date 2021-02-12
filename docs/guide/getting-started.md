@@ -41,7 +41,7 @@ class MyDocument extends Document {
   }
   render() {
     return (
-      <Html lang="en" charSet="utf-8">
+      <Html lang="en">
         <Head>
             <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
         </Head>
