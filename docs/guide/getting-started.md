@@ -49,7 +49,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <script src="https://unpkg.com/kursor"></script>
+        <script src="https://unpkg.com/kursor" />
         <script dangerouslySetInnerHTML={{__html:`new kursor({ type: 1, removeDefaultCursor: true })`}} />
       </Html>
     )
