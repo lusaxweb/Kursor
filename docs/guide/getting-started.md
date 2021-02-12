@@ -50,7 +50,7 @@ class MyDocument extends Document {
           <NextScript />
         </body>
         <script src="https://unpkg.com/kursor"></script>
-        <script dangerouslySetInnerHTML={{__html:`new kursor({ type: 2, removeDefaultCursor: true })`}} />
+        <script dangerouslySetInnerHTML={{__html:`new kursor({ type: 1, removeDefaultCursor: true })`}} />
       </Html>
     )
   }
