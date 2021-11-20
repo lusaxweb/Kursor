@@ -15,7 +15,7 @@ The easiest way to try out Kursor.js is using the [JSFiddle Hello World example]
 </head>
 <body>
     <div id="app">
-        <p>hello Kursor.js</p>
+        <p>hello Kursor MAHIN.js</p>
     </div>
 </body>
     <script src="https://unpkg.com/kursor"></script>
